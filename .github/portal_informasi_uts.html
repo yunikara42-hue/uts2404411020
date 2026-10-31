@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portal Informasi UTS</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{font-family:'Segoe UI',Arial,sans-serif;background:#f5f7fb;color:#253047;line-height:1.6}
+header{background:#142b50;color:#fff;padding:18px 7%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100}
+.logo{font-size:21px;font-weight:bold}.logo span{color:#62c5ff}
+nav{display:flex;gap:22px;flex-wrap:wrap}nav a{color:#fff;text-decoration:none;font-size:14px}nav a:hover{color:#62c5ff}
+.hero{background:linear-gradient(120deg,#142b50,#2366a5);color:#fff;padding:85px 7%;display:flex;align-items:center;justify-content:space-between;gap:30px}
+.hero-content{max-width:650px}.hero h1{font-size:43px;line-height:1.2;margin-bottom:18px}.hero p{color:#dce9f8;margin-bottom:25px}
+.btn{display:inline-block;background:#60c5ff;color:#142b50;text-decoration:none;padding:12px 23px;border-radius:7px;font-weight:bold}
+.hero-info{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:15px;padding:28px;min-width:230px}
+.hero-info h2{font-size:30px;color:#72d0ff}
+.container{width:86%;max-width:1150px;margin:auto}section{padding:65px 0}
+.section-title{text-align:center;margin-bottom:35px}.section-title h2{color:#142b50;font-size:29px}.section-title p{color:#788397}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#fff;padding:25px;border-radius:12px;box-shadow:0 4px 18px rgba(0,0,0,.05);border:1px solid #e9edf4}
+.card-icon{font-size:30px;margin-bottom:12px}.card h3{color:#173b68;margin-bottom:10px}.card p{color:#69768a;font-size:14px}
+.info-date{color:#2877b9;font-size:12px;font-weight:bold;margin-bottom:8px}
+#jadwal{background:#edf3fa}.table-wrapper{overflow-x:auto;background:#fff;border-radius:12px;padding:15px}
+table{width:100%;border-collapse:collapse;min-width:650px}th,td{text-align:left;padding:15px;border-bottom:1px solid #e8edf3;font-size:14px}
+th{background:#173b68;color:#fff}tr:hover{background:#f2f7fc}
+.status{background:#e0f5e9;color:#21834a;padding:5px 10px;border-radius:20px;font-size:12px}
+.rules{background:#fff;padding:28px;border-radius:12px;box-shadow:0 4px 18px rgba(0,0,0,.05)}
+.rules ul{padding-left:22px}.rules li{margin:12px 0;color:#56647a}
+.prepare{background:#173b68;color:#fff;border-radius:15px;padding:35px;margin-top:25px}
+.prepare h3{margin-bottom:15px}.prepare li{margin:8px 0 8px 20px}
+.contact{text-align:center;background:#eaf2fb;padding:35px;border-radius:12px}.contact a{color:#2166a5;font-weight:bold}
+footer{background:#142b50;color:#dce9f8;text-align:center;padding:25px;font-size:13px}
+@media(max-width:800px){header{flex-direction:column;gap:15px}nav{justify-content:center;gap:12px}.hero{flex-direction:column;align-items:flex-start;padding:60px 7%}.hero h1{font-size:32px}.hero-info{width:100%}.cards{grid-template-columns:1fr}.container{width:90%}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">INFO<span>UTS</span></div>
+  <nav>
+    <a href="#beranda">Beranda</a><a href="#pengumuman">Pengumuman</a>
+    <a href="#jadwal">Jadwal</a><a href="#ketentuan">Ketentuan</a><a href="#kontak">Kontak</a>
+  </nav>
+</header>
+
+<section class="hero" id="beranda">
+  <div class="hero-content">
+    <h1>Portal Informasi Ujian Tengah Semester</h1>
+    <p>Selamat datang di portal informasi Ujian Tengah Semester. Dapatkan informasi mengenai jadwal, pengumuman, ketentuan, dan persiapan ujian dalam satu halaman.</p>
+    <a href="#jadwal" class="btn">Lihat Jadwal UTS</a>
+  </div>
+  <div class="hero-info">
+    <p>PORTAL AKADEMIK</p><h2>UTS</h2><p>Ujian Tengah Semester</p>
+    <hr style="margin:15px 0;opacity:.3"><p>Informasi akademik mahasiswa</p>
+  </div>
+</section>
+
+<main class="container">
+<section id="pengumuman">
+  <div class="section-title"><h2>Pengumuman Terbaru</h2><p>Informasi penting seputar pelaksanaan UTS</p></div>
+  <div class="cards">
+    <article class="card"><div class="card-icon">📢</div><div class="info-date">PENGUMUMAN AKADEMIK</div><h3>Informasi Pelaksanaan UTS</h3><p>Mahasiswa diharapkan memperhatikan jadwal dan ketentuan pelaksanaan Ujian Tengah Semester.</p></article>
+    <article class="card"><div class="card-icon">📅</div><div class="info-date">INFORMASI JADWAL</div><h3>Jadwal Ujian</h3><p>Periksa jadwal ujian masing-masing mata kuliah agar tidak terjadi kesalahan waktu pelaksanaan.</p></article>
+    <article class="card"><div class="card-icon">📚</div><div class="info-date">PERSIAPAN UJIAN</div><h3>Persiapan Mahasiswa</h3><p>Pelajari materi perkuliahan dan persiapkan perlengkapan yang diperlukan sebelum ujian.</p></article>
+  </div>
+</section>
+
+<section id="jadwal">
+  <div class="section-title"><h2>Jadwal Ujian Tengah Semester</h2><p>Contoh format jadwal UTS. Sesuaikan dengan jadwal resmi kampus.</p></div>
+  <div class="table-wrapper"><table>
+    <thead><tr><th>No.</th><th>Mata Kuliah</th><th>Hari/Tanggal</th><th>Waktu</th><th>Ruangan</th><th>Status</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>Pemrograman Web</td><td>Isi tanggal</td><td>08.00 - 10.00</td><td>Isi ruangan</td><td><span class="status">Terjadwal</span></td></tr>
+      <tr><td>2</td><td>Basis Data</td><td>Isi tanggal</td><td>10.00 - 12.00</td><td>Isi ruangan</td><td><span class="status">Terjadwal</span></td></tr>
+      <tr><td>3</td><td>Sistem Informasi</td><td>Isi tanggal</td><td>13.00 - 15.00</td><td>Isi ruangan</td><td><span class="status">Terjadwal</span></td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section id="ketentuan">
+  <div class="section-title"><h2>Ketentuan Pelaksanaan UTS</h2><p>Hal-hal yang perlu diperhatikan mahasiswa</p></div>
+  <div class="rules"><h3>📋 Tata Tertib Ujian</h3><ul>
+    <li>Mahasiswa wajib mengetahui jadwal ujian masing-masing mata kuliah.</li>
+    <li>Datang ke ruang ujian sebelum waktu ujian dimulai.</li>
+    <li>Membawa kartu identitas mahasiswa jika dipersyaratkan.</li>
+    <li>Membawa alat tulis dan perlengkapan ujian yang diperlukan.</li>
+    <li>Mematuhi arahan dosen atau pengawas ujian.</li>
+    <li>Tidak melakukan kecurangan selama pelaksanaan ujian.</li>
+    <li>Menjaga ketertiban dan kebersihan ruang ujian.</li>
+  </ul></div>
+  <div class="prepare"><h3>🎯 Persiapan Sebelum UTS</h3><p>Pastikan beberapa hal berikut sudah dipersiapkan:</p><ul>
+    <li>Mempelajari kembali materi perkuliahan.</li><li>Mencatat jadwal dan lokasi ujian.</li>
+    <li>Mempersiapkan perlengkapan ujian.</li><li>Memastikan persyaratan administrasi sesuai ketentuan kampus.</li>
+    <li>Menjaga kesehatan dan mengatur waktu istirahat.</li>
+  </ul></div>
+</section>
+
+<section id="kontak">
+  <div class="section-title"><h2>Informasi dan Kontak</h2><p>Hubungi pihak akademik untuk informasi lebih lanjut</p></div>
+  <div class="contact"><h3>Butuh Informasi Lebih Lanjut?</h3><p>Silakan menghubungi bagian akademik atau dosen pengampu mata kuliah.</p>
+    <p style="margin-top:15px">Email: <a href="mailto:akademik@kampus.ac.id">akademik@kampus.ac.id</a></p>
+    <p style="font-size:12px;margin-top:8px">Ganti alamat email tersebut dengan kontak resmi kampus.</p>
+  </div>
+</section>
+</main>
+
+<footer><p>© 2026 Portal Informasi UTS. Semua Hak Dilindungi.</p><p>Media Informasi Akademik Mahasiswa</p></footer>
+</body>
+</html>
